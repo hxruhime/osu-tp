@@ -4,7 +4,7 @@ A behavior where osu! occasionally renders/allows the cursor outside of the regu
 
 More specifically, the "Gaomon" tablet driver was speculated to be the source of this, but similar behavior may be produced using an XP-PEN tablet with no driver. You're not actually able to play using no driver unlike when using the Gaomon driver, but it seems worth noting.
 
-- [IN AND OUT OF GAME | "worst hr player", possibly experiencing this behavior](https://streamable.com/pssvvk)
+- [IN AND OUT OF GAME | Gaomon S620 | "worst hr player", possibly experiencing this behavior](https://streamable.com/pssvvk)
 - [IN GAME | "Shiratori-P", possibly recreating this behavior](https://www.youtube.com/watch?v=OTuvFCODsbY)
 
 ***TL;DR***  
@@ -22,6 +22,9 @@ It is also not known if being in or out of game (play state as in menu vs mid-ma
 | XP-PEN Star G630s | PenTablet        | [❌](https://youtu.be/n3PcbDo6324)                |
 | XP-PEN Star G630s | None             | [⚠️](https://youtu.be/PUQRm2EHhRE)                |
 | Wacom CTL - 480   | OpenTabletDriver | [❌](https://youtu.be/AZfd7HCz8T0)                |
+| Gaomon S620       | OpenTabletDriver | [❔]()                                             |
+| Gaomon S620       | Gaomon Driver    | [❔]()                                             |
+
 
 *Please keep in mind this is the product of only two days of research, and that research into this possible bug has been completely independent. All work done in this repository is only for public information, and none of its authors or contributors are leaning in any direction regarding any topic when it comes to its use other than the plain fact that this game behavior appears to POSSIBLY be unanticipated. This information, its authors, and its contributors are not claiming or intending to claim any proven fact. Only speculation.*
 

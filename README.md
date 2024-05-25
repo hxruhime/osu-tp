@@ -59,7 +59,7 @@ Relative / Mouse Mode
 *Note: The amount moved past the barrier differs because of where the actual center of the sprite is.*  
 
 # Unanticipated Behavior Occuring  
-- user is able to move the osu! cursor out of monitor bounds more than halfway to the left.
+- user is able to move the osu! cursor out of monitor bounds more than halfway to where no monitor is present.
 - osu! then teleports the player's cursor back into regular play bounds.
 
 # Proposed Explaination

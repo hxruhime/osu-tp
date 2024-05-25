@@ -10,16 +10,16 @@ Above 1.0 Sens
 Raw Input
 Gamon Tablet Driver in Relative Mode
 ```
-## Settings Explaination  
+## osu! Settings Explaination  
 
-### Mouse | Sensitivity  
-A sensitivity above `1.0` will force "Raw Input" to be enabled.  
+##### Mouse | Sensitivity  
+###### A sensitivity above `1.0` will force "Raw Input" to be enabled.  
 
-### Mouse | [Raw Input](https://osu.ppy.sh/community/forums/topics/187785?n=1)
-"Raw input allows osu! to read mouse/tablet values directly from the hardware, without any post-processing. As a result, it can bypas windows bugs and acceleration algorithms. It can also allow for tablet sensitivity adjustment without setting a custom tablet area mapping at driver-level."
+##### Mouse | [Raw Input](https://osu.ppy.sh/community/forums/topics/187785?n=1)
+###### "Raw input allows osu! to read mouse/tablet values directly from the hardware, without any post-processing. As a result, it can bypas windows bugs and acceleration algorithms. It can also allow for tablet sensitivity adjustment without setting a custom tablet area mapping at driver-level."
 
-### Mouse | Confine Cursor
-This setting will allow you to chose when osu! will confine the WINDOWS cursor to the osu! game window.
+##### Mouse | Confine Cursor
+###### This setting will allow you to chose when osu! will confine the WINDOWS cursor to the osu! game window.
 
 ## Anticipated Behavior  
 - Windows does not allow the Windows cursor to move out of the monitor bounds to the left (at all).  

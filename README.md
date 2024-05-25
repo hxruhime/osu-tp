@@ -4,13 +4,13 @@ A bug where osu! occasionally renders / allows the cursor outside of the regular
 This behavior was possibly thought to be evidence towards software interference with osu!
 
 - [Clip of this thought to be happening to "worst hr player"](https://streamable.com/pssvvk)
-- [Clip of "Shiratori-P" recreating this bug](https://www.youtube.com/watch?v=OTuvFCODsbY)
+- [Clip of "Shiratori-P" thought to be recreating this bug](https://www.youtube.com/watch?v=OTuvFCODsbY)
 - [Other instances of possible innaccuracy of osu! cursor due to Gamon tablet drivers?](https://www.reddit.com/r/osugame/comments/i5v5p7/how_can_i_fix_teleporting_cursors/)
 
 ***TLDR***  
 When typically not possible, sometimes a player may move their cursor out of bounds due to what is thought to be an inaccurate interaction between the Gamon tablet driver and osu! while the "Raw Input" setting is enabled. This can cause players that experience this bug to look like they may have external software interacting with their osu! game process.  
 
-- [Demonstration of recreating this behavior through use of "maple.software"](https://streamable.com/itnxj6)
+- [Demonstration of recreating this behavior ARTIFICALLY through use of "maple.software"](https://streamable.com/itnxj6)
 
 It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination.
 

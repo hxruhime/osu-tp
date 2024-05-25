@@ -16,7 +16,7 @@ When typically not possible, sometimes a player may move their cursor out of bou
 
 It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination. More testing is required, but the entire off screen and teleportation visually related portion of this is likely the osu! process writing it's cursor to invalid coords, realizing it's mistake, then setting the cursor back in play.  
 
-It is also not known if being in or out of play has any affect on this behavior, but it seems more than likely it does not.  
+It is also not known if being in or out of game (playstate as in menu vs mid map) has any affect on this behavior, but it seems more than likely it does not.  
 
 ***So far, this appeats to happen with:***
 - [Gamon Driver](https://www.youtube.com/watch?v=OTuvFCODsbY)

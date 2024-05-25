@@ -1,10 +1,10 @@
 # osu-tp  
-A bug where osu! occasionally renders / allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the Gamon tablet driver and the "Raw Input" setting within osu!  
+A behavior where osu! occasionally renders / allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the Gamon tablet driver and the "Raw Input" setting within osu!  
   
-This behavior was possibly thought to be evidence towards software interference with osu!
+This behavior was possibly thought to be evidence towards software interference with osu! but this may actually not be the case.
 
 - [IN AND OUT OF GAME | Clip of this thought to be happening to "worst hr player"](https://streamable.com/pssvvk)
-- [IN GAME |Clip of "Shiratori-P" thought to be recreating this bug IN GAME](https://www.youtube.com/watch?v=OTuvFCODsbY)
+- [IN GAME | Clip of "Shiratori-P" thought to be recreating this behavior](https://www.youtube.com/watch?v=OTuvFCODsbY)
 - [Other instances of possible innaccuracy of osu! cursor due to Gamon tablet drivers?](https://www.reddit.com/r/osugame/comments/i5v5p7/how_can_i_fix_teleporting_cursors/)
 
 ***TLDR***  
@@ -12,8 +12,10 @@ When typically not possible, sometimes a player may move their cursor out of bou
 
 - [IN GAME | Demonstration of recreating this behavior ARTIFICALLY through use of "maple.software"](https://streamable.com/itnxj6)
 
-It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination.
+It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination. More testing is required.  
 
+It is also not known if being in or out of play has any affect on this behavior.  
+  
 ***So far, this appears to NOT happen with:***
 - XP-PEN PenTablet
 - OpenTabletDriver

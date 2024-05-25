@@ -18,7 +18,7 @@ It is also not known if being in or out of play has any affect on this behavior.
   
 ***So far, this appears to NOT happen with:***
 - XP-PEN PenTablet
-- OpenTabletDriver
+- [OpenTabletDriver](https://youtu.be/AZfd7HCz8T0)
 
 *Please keep in mind this is the product of only two days of research, and that research into this possible bug has been completely independant. All work done in this repository is only for public information, and none of it's authors or contributors are leaning in any direction regarding any topic when it comes to its use other than the plain fact that this game behavior appears to POSSIBLY be unanticipated. This information, its authors, and its contributors are not claiming or intending to claim any proven fact. Only speculation.*
 

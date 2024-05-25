@@ -14,12 +14,19 @@ When typically not possible, sometimes a player may move their cursor out of bou
 
 It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination.
 
+***So far, this appears to NOT happen with:***
+- XP-PEN PenTablet
+- OpenTabletDriver
+
+*Please keep in mind this is the product of only two days of research, and that research into this possible bug has been completely independant. All work done in this repository is only for public information, and none of it's authors or contributors are leaning in any direction regarding any topic when it comes to its use other than the plain fact that this game behavior appears to POSSIBLY be unanticipated. This information, its authors, and its contributors are not claiming or intending to claim any proven fact. Only speculation.*
+
 ## Observation Environment 
 ```
 No Monitor to the Left
 Above 1.0 Sens
 Raw Input
-Gamon Tablet Driver in Relative Mode
+Gamon Tablet Driver
+Relative Mode
 ```
 ## osu! Settings Explaination  
 
@@ -47,10 +54,6 @@ Gamon Tablet Driver in Relative Mode
 - Due to using a sensitivity above one, the player is forced to use Raw Input.
 - Raw Input makes osu! read the tablet driver to determine the osu! cursor position, allowing for it to be set past the bounds typically containing the windows cursor.
 - Due to some bug at this process, Gamon will report the osu! cursor to be outside of play, causing osu! to attempt to render it off screen before catching this mistake,
-
-## Additional Tests by Difference of Environment
-### When replicating the bug with XP-PEN PenTablet:
-### When replicating the bug with OpenTabletDriver:
 
 ## Additional Tests by Software
 `In all tests done by software, there is no monitor present to the left of the monitor displaying osu !and confine cursor is always set to "Never".`

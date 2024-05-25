@@ -107,3 +107,7 @@ When attempting to use the Windows API to move the osu! cursor using the SetCurs
 ## OUT OF GAME | Moving the Windows cursor using the Windows API while Raw Input is disabled:
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl, fl) function, notice the osu! cursor teleports to halfway off the screen horizontally.  
 ![Windows cursor no raw input](https://cdn.discordapp.com/attachments/731235337073852436/1243736255481774161/windows_cursor_no_raw_input.gif?ex=66528f26&is=66513da6&hm=da0df6a4826d13fcaf87689c794e28c4d2468a313038fb07cf009d67aea4131c&)
+
+## Possibly Related?  
+- https://github.com/ppy/osu-framework/pull/3978
+- https://github.com/ppy/osu/pull/11060

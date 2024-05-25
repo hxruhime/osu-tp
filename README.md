@@ -70,9 +70,11 @@ if (GetAsyncKeyState(VK_END) & 1)
 
 ### Moving the Windows cursor using the Windows API while Raw Input is enabled:
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl,fl) function, notice there is no response from the osu! cursor.
+https://github.com/hxruhime/osu-tp/blob/main/assets/windows%20cursor%20raw%20input.gif
 
 ### Moving the Windows cursor using the Windows API while Raw Input is disabled:
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl,fl) function, notice the osu! cursor teleports to halfway off the screen horizontally.
+https://github.com/hxruhime/osu-tp/blob/main/assets/windows%20cursor%20no%20raw%20input.gif
 
 ### Moving the osu! cursor using the Windows API while Raw Input is enabled:
 

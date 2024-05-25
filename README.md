@@ -60,10 +60,10 @@ if (GetAsyncKeyState(VK_END) & 1)
 {
   POINT p;
 
-  // get the cursor position
+  // get the Windows cursor position
   GetCursorPos(&p);
 
-  // set the cursor position to -10000
+  // set the osu! cursor position to -10000
   Player::SetCursorPosition({ -10000, p.y });
 }
 ```

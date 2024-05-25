@@ -53,8 +53,8 @@ Relative / Mouse Mode
 ###### It is currently unknown if this makes a difference.  
 
 ## Behavior Anticipated to Occur  
-- Windows does not allow the Windows cursor to move out of the monitor bounds to the left (at all).  
-- osu! does not allow the osu! cursor to move out of the monitor bounds to the left (more than half way) depending on certain environmental configurations.  
+- Windows does not allow the Windows cursor to move out of the monitor bounds where no monitor is present.  
+- osu! does not allow the osu! cursor to move out of the monitor bounds to the where no monitor is present (more than half way) depending on certain environmental configurations.  
 
 *Note: The amount moved past the barrier differs because of where the actual center of the sprite is.*  
 

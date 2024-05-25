@@ -1,5 +1,7 @@
 # osu-tp  
-A behavior where osu! occasionally renders / allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the tablet driver and the "Raw Input" setting within osu!. More specifically the "Gamon" tablet driver was to be the source of this, but SIMILAR behavior may be produced through using an XP-PEN tablet with no driver. You're not actually able to play like when using the Gamon driver, but it seems worth noting.
+A behavior where osu! occasionally renders / allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the tablet driver and the "Raw Input" setting within osu!.  
+  
+More specifically the "Gamon" tablet driver was to be the source of this, but SIMILAR behavior may be produced through using an XP-PEN tablet with no driver. You're not actually able to play like when using the Gamon driver, but it seems worth noting.
   
 This behavior was possibly thought to be evidence towards software interference with osu! but this may actually not be the case.
 

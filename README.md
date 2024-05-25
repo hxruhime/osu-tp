@@ -7,7 +7,7 @@ More specifically, the "Gaomon" tablet driver was speculated to be the source of
 - [IN AND OUT OF GAME | Gaomon S620 | Gaomon Driver | "worst hr player", possibly experiencing this behavior](https://streamable.com/pssvvk)
 - [IN GAME | "Shiratori-P", possibly recreating this behavior](https://www.youtube.com/watch?v=OTuvFCODsbY)
 
-***TL;DR***  
+##### ***TL;DR***  
 When typically not possible, sometimes a player may move their cursor out of bounds due to what is thought to be an inaccurate interaction between the tablet driver and osu! while the "Raw Input" setting is enabled. This can cause players that experience this bug to look like they may have external software interacting with their osu! game process.
 
 - [IN GAME | CTL-480 | OpenTabletDriver | Demonstration of recreating this behavior artificially through use of "maple.software"](https://streamable.com/itnxj6)

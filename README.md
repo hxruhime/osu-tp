@@ -19,7 +19,7 @@ It is still not 100% that this behavior is due to osu!, Gamon, or other unkown /
 It is also not known if being in or out of play has any affect on this behavior, but it seems more than likely it does not.  
 
 ***So far, this appeats to happen with:***
-- [Gamon Driver]((https://www.youtube.com/watch?v=OTuvFCODsbY)
+- [Gamon Driver](https://www.youtube.com/watch?v=OTuvFCODsbY)
 
 ***So far, this appears to NOT happen with:***
 - [OpenTabletDriver](https://youtu.be/AZfd7HCz8T0)

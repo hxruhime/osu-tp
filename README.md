@@ -1,5 +1,7 @@
 # osu-tp  
-A bug where osu! occasionally renders the cursor outside of the regular monitor bounds  
+A bug where osu! occasionally renders / allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the Gamon tablet driver and the "Raw Input" setting within osu!  
+  
+This behavior was possibly thought to be evidence towards software interference with osu!
 
 ## Observation Environment 
 ```
@@ -35,7 +37,11 @@ This setting will allow you to chose when osu! will confine the WINDOWS cursor t
 - Raw Input makes osu! read the tablet driver to determine the osu! cursor position, allowing for it to be set past the bounds typically containing the windows cursor.
 - Due to some bug at this process, Gamon will report the osu! cursor to be outside of play, causing osu! to attempt to render it off screen before catching this mistake,
 
-## Additional Tests
+## Additional Tests by Difference of Environment
+### When replicating the bug with XP-PEN PenTablet:
+### When replicating the bug with OpenTabletDriver:
+
+## Additional Tests by Software
 `In all tests, there is no monitor present to the left of the monitor displaying osu!`
 
 **Moving the Windows Cursor**

@@ -4,13 +4,13 @@ A behavior where osu! occasionally renders/allows the cursor outside of the regu
 
 More specifically, the "Gaomon" tablet driver was speculated to be the source of this, but similar behavior may be produced using an XP-PEN tablet with no driver. You're not actually able to play using no driver unlike when using the Gaomon driver, but it seems worth noting.
 
-- [IN AND OUT OF GAME | Gaomon S620 | "worst hr player", possibly experiencing this behavior](https://streamable.com/pssvvk)
+- [IN AND OUT OF GAME | Gaomon S620 | Gaomon Driver | "worst hr player", possibly experiencing this behavior](https://streamable.com/pssvvk)
 - [IN GAME | "Shiratori-P", possibly recreating this behavior](https://www.youtube.com/watch?v=OTuvFCODsbY)
 
 ***TL;DR***  
 When typically not possible, sometimes a player may move their cursor out of bounds due to what is thought to be an inaccurate interaction between the tablet driver and osu! while the "Raw Input" setting is enabled. This can cause players that experience this bug to look like they may have external software interacting with their osu! game process.
 
-- [IN GAME | Demonstration of recreating this behavior artificially through use of "maple.software"](https://streamable.com/itnxj6)
+- [IN GAME | CTL-480 | OpenTabletDriver | Demonstration of recreating this behavior artificially through use of "maple.software"](https://streamable.com/itnxj6)
 
 It is still not 100% certain that this behavior is due to osu!, Gaomon, or other unknown/unconsidered factors, but so far, this seems to be the most logical explanation. More testing is required, but the entire off-screen and teleportation visually related portion of this is likely the osu! process writing its cursor to invalid coordinates, realizing its mistake, then setting the cursor back in play.
 

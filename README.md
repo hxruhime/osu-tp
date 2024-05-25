@@ -100,12 +100,8 @@ if (GetAsyncKeyState(VK_END) & 1)
 
 ### OUT OF GAME | Moving the Windows cursor using the Windows API while Raw Input is enabled:
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl,fl) function, notice there is no response from the osu! cursor.  
-![Supporting GIF 1](https://cdn.discordapp.com/attachments/731235337073852436/1243736240868687982/windows_cursor_raw_input.gif?ex=66528f23&is=66513da3&hm=95ea739862db5df355f10d2e8ec112e2aadde12b8e5fb688b43e259b8e3615f7&)
+https://cdn.discordapp.com/attachments/731235337073852436/1243736240868687982/windows_cursor_raw_input.gif?ex=66528f23&is=66513da3&hm=95ea739862db5df355f10d2e8ec112e2aadde12b8e5fb688b43e259b8e3615f7&
 
 ### OUT OF GAME | Moving the Windows cursor using the Windows API while Raw Input is disabled:
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl,fl) function, notice the osu! cursor teleports to halfway off the screen horizontally.  
-![Supporting GIF 2](https://cdn.discordapp.com/attachments/731235337073852436/1243736255481774161/windows_cursor_no_raw_input.gif?ex=66528f26&is=66513da6&hm=da0df6a4826d13fcaf87689c794e28c4d2468a313038fb07cf009d67aea4131c&)
-
-### IN GAME | Moving the osu! cursor using maple.software while Raw Input is disabled:
-When attempting to use Windows API to move the osu! cursor using maple.software, an internal cheating software which interacts with osu! through memory, a different story is told. Here we can see a way to illegitamtely recreate this behavior where the osu! cursor can leave the screen bounds.  
-![Supporting Video](https://streamable.com/pssvvk?src=player-page-share)
+https://cdn.discordapp.com/attachments/731235337073852436/1243736255481774161/windows_cursor_no_raw_input.gif?ex=66528f26&is=66513da6&hm=da0df6a4826d13fcaf87689c794e28c4d2468a313038fb07cf009d67aea4131c&

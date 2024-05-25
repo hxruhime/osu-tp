@@ -63,7 +63,7 @@ Relative Mode
 - There is both an osu! and Windows curosr.
 - Due to using a sensitivity above one, the player is forced to use Raw Input.
 - Raw Input makes osu! read the tablet driver to determine the osu! cursor position, allowing for it to be set past the bounds typically containing the windows cursor.
-- Due to some bug at this process, Gamon will report the osu! cursor to be outside of play, causing osu! to attempt to render it off screen before catching this mistake,
+- Due to some bug at this process, Gamon (or other tablet drivers?) will report the osu! cursor to be outside of play, causing osu! to attempt to render it off screen before catching this mistake,
 
 ## Additional Tests by Software
 `In all tests done by software, there is no monitor present to the left of the monitor displaying osu !and confine cursor is always set to "Never".`

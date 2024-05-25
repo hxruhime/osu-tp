@@ -10,7 +10,7 @@ This behavior was possibly thought to be evidence towards software interference 
 ***TLDR***  
 When typically not possible, sometimes a player may move their cursor out of bounds due to what is thought to be an inaccurate interaction between the Gamon tablet driver and osu! while the "Raw Input" setting is enabled. This can cause players that experience this bug to look like they may have external software interacting with their osu! game process.  
 
-- [Demonstration of recreating this behavior through use of external software](https://streamable.com/itnxj6)
+- [Demonstration of recreating this behavior through use of "maple.software"](https://streamable.com/itnxj6)
 
 It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination.
 

@@ -32,11 +32,11 @@ It is also not known if being in or out of game (playstate as in menu vs mid map
 
 ## Observation Environment 
 ```
-No Monitor to the Left
-Above 1.0 Sens
+No Monitor to the Side Being Penetrated
+Above 1.0 Sensitivity
 Raw Input
 Gamon Tablet Driver
-Relative Mode
+Relative / Mouse Mode
 ```
 ## osu! Settings Explaination  
 

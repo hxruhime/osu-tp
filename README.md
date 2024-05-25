@@ -3,14 +3,14 @@ A bug where osu! occasionally renders / allows the cursor outside of the regular
   
 This behavior was possibly thought to be evidence towards software interference with osu!
 
-- [Clip of this thought to be happening to "worst hr player" IN AND OUT OF GAME?](https://streamable.com/pssvvk)
-- [Clip of "Shiratori-P" thought to be recreating this bug IN GAME](https://www.youtube.com/watch?v=OTuvFCODsbY)
+- [IN AND OUT OF GAME | Clip of this thought to be happening to "worst hr player"](https://streamable.com/pssvvk)
+- [IN GAME |Clip of "Shiratori-P" thought to be recreating this bug IN GAME](https://www.youtube.com/watch?v=OTuvFCODsbY)
 - [Other instances of possible innaccuracy of osu! cursor due to Gamon tablet drivers?](https://www.reddit.com/r/osugame/comments/i5v5p7/how_can_i_fix_teleporting_cursors/)
 
 ***TLDR***  
 When typically not possible, sometimes a player may move their cursor out of bounds due to what is thought to be an inaccurate interaction between the Gamon tablet driver and osu! while the "Raw Input" setting is enabled. This can cause players that experience this bug to look like they may have external software interacting with their osu! game process.  
 
-- [Demonstration of recreating this behavior ARTIFICALLY through use of "maple.software" IN GAME](https://streamable.com/itnxj6)
+- [IN GAME | Demonstration of recreating this behavior ARTIFICALLY through use of "maple.software"](https://streamable.com/itnxj6)
 
 It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination.
 
@@ -88,14 +88,14 @@ if (GetAsyncKeyState(VK_END) & 1)
 }
 ```
 
-### Moving the Windows cursor using the Windows API while Raw Input is enabled OUT OF GAME:
+### OUT OF GAME | Moving the Windows cursor using the Windows API while Raw Input is enabled:
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl,fl) function, notice there is no response from the osu! cursor.  
 ![Supporting GIF 1](https://cdn.discordapp.com/attachments/731235337073852436/1243736240868687982/windows_cursor_raw_input.gif?ex=66528f23&is=66513da3&hm=95ea739862db5df355f10d2e8ec112e2aadde12b8e5fb688b43e259b8e3615f7&)
 
-### Moving the Windows cursor using the Windows API while Raw Input is disabled OUT OF GAME:
+### OUT OF GAME | Moving the Windows cursor using the Windows API while Raw Input is disabled:
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl,fl) function, notice the osu! cursor teleports to halfway off the screen horizontally.  
 ![Supporting GIF 2](https://cdn.discordapp.com/attachments/731235337073852436/1243736255481774161/windows_cursor_no_raw_input.gif?ex=66528f26&is=66513da6&hm=da0df6a4826d13fcaf87689c794e28c4d2468a313038fb07cf009d67aea4131c&)
 
-### Moving the osu! cursor using maple.software while Raw Input is disabled IN GAME:
+### IN GAME | Moving the osu! cursor using maple.software while Raw Input is disabled:
 When attempting to use Windows API to move the osu! cursor using maple.software, an internal cheating software which interacts with osu! through memory, a different story is told. Here we can see a way to illegitamtely recreate this behavior where the osu! cursor can leave the screen bounds.  
 ![Supporting Video](https://streamable.com/pssvvk?src=player-page-share)

@@ -17,13 +17,16 @@ When typically not possible, sometimes a player may move their cursor out of bou
 It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination. More testing is required, but the entire off screen and teleportation visually related portion of this is likely the osu! process writing it's cursor to invalid coords, realizing it's mistake, then setting the cursor back in play.  
 
 It is also not known if being in or out of play has any affect on this behavior, but it seems more than likely it does not.  
-  
+
+***So far, this appeats to happen with:***
+- [Gamon Driver]((https://www.youtube.com/watch?v=OTuvFCODsbY)
+
 ***So far, this appears to NOT happen with:***
 - [OpenTabletDriver](https://youtu.be/AZfd7HCz8T0)
 - [XP-PEN PenTablet](https://youtu.be/n3PcbDo6324)
 
-***Appears to partially happens with? Possibly unrelated?:***
-- [XP-PEN NoDriver](https://youtu.be/PUQRm2EHhRE)
+***So far, this appears to potentially happen with:***
+- [XP-PEN (No Driver)](https://youtu.be/PUQRm2EHhRE)
 
 *Please keep in mind this is the product of only two days of research, and that research into this possible bug has been completely independant. All work done in this repository is only for public information, and none of it's authors or contributors are leaning in any direction regarding any topic when it comes to its use other than the plain fact that this game behavior appears to POSSIBLY be unanticipated. This information, its authors, and its contributors are not claiming or intending to claim any proven fact. Only speculation.*
 

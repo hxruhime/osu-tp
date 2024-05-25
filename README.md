@@ -38,16 +38,19 @@ Raw Input
 Gamon Tablet Driver
 Relative / Mouse Mode
 ```
-## osu! Settings Explaination  
+# osu! Settings Explaination  
 
 ##### Mouse | Sensitivity  
 ###### A sensitivity above `1.0` will force "Raw Input" to be enabled.  
+###### It is currently unknown if this makes a difference.  
 
 ##### Mouse | [Raw Input](https://osu.ppy.sh/community/forums/topics/187785?n=1)
 ###### "Raw input allows osu! to read mouse/tablet values directly from the hardware, without any post-processing. As a result, it can bypas windows bugs and acceleration algorithms. It can also allow for tablet sensitivity adjustment without setting a custom tablet area mapping at driver-level."
+###### This appears to be related to the main cause of the issue.
 
 ##### Mouse | Confine Cursor
 ###### This setting will allow you to chose when osu! will confine the WINDOWS cursor to the osu! game window.
+###### It is currently unknown if this makes a difference.  
 
 ## Behavior Anticipated to Occur  
 - Windows does not allow the Windows cursor to move out of the monitor bounds to the left (at all).  
@@ -55,17 +58,17 @@ Relative / Mouse Mode
 
 *Note: The amount moved past the barrier differs because of where the actual center of the sprite is.*  
 
-## Unanticipated Behavior Occuring  
+# Unanticipated Behavior Occuring  
 - user is able to move the osu! cursor out of monitor bounds more than halfway to the left.
 - osu! then teleports the player's cursor back into regular play bounds.
 
-## Proposed Explaination
+# Proposed Explaination
 - There is both an osu! and Windows curosr.
 - Due to using a sensitivity above one, the player is forced to use Raw Input.
 - Raw Input makes osu! read the tablet driver to determine the osu! cursor position, allowing for it to be set past the bounds typically containing the windows cursor.
 - Due to some bug at this process, Gamon (or other tablet drivers?) will report the osu! cursor to be outside of play, causing osu! to attempt to render it off screen before catching this mistake,
 
-## Additional Tests by Software
+# Additional Tests by Software
 `In all tests done by software, there is no monitor present to the left of the monitor displaying osu !and confine cursor is always set to "Never".`
 
 **Moving the Windows Cursor**
@@ -98,10 +101,10 @@ if (GetAsyncKeyState(VK_END) & 1)
 }
 ```
 
-### OUT OF GAME | Moving the Windows cursor using the Windows API while Raw Input is enabled:
+## OUT OF GAME | Moving the Windows cursor using the Windows API while Raw Input is enabled:
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl,fl) function, notice there is no response from the osu! cursor.  
 https://cdn.discordapp.com/attachments/731235337073852436/1243736240868687982/windows_cursor_raw_input.gif?ex=66528f23&is=66513da3&hm=95ea739862db5df355f10d2e8ec112e2aadde12b8e5fb688b43e259b8e3615f7&
 
-### OUT OF GAME | Moving the Windows cursor using the Windows API while Raw Input is disabled:
+## OUT OF GAME | Moving the Windows cursor using the Windows API while Raw Input is disabled:
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl,fl) function, notice the osu! cursor teleports to halfway off the screen horizontally.  
 https://cdn.discordapp.com/attachments/731235337073852436/1243736255481774161/windows_cursor_no_raw_input.gif?ex=66528f26&is=66513da6&hm=da0df6a4826d13fcaf87689c794e28c4d2468a313038fb07cf009d67aea4131c&

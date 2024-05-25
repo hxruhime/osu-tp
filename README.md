@@ -20,6 +20,7 @@ It is also not known if being in or out of play has any affect on this behavior,
   
 ***So far, this appears to NOT happen with:***
 - [OpenTabletDriver](https://youtu.be/AZfd7HCz8T0)
+- [XP-PEN PenTablet](https://youtu.be/n3PcbDo6324)
 
 ***Appears to partially happens with? Possibly unrelated?:***
 - [XP-PEN NoDriver](https://youtu.be/PUQRm2EHhRE)

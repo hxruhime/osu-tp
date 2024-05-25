@@ -1,5 +1,5 @@
 # osu-tp  
-A behavior where osu! occasionally renders / allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the Gamon tablet driver and the "Raw Input" setting within osu!  
+A behavior where osu! occasionally renders / allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the tablet driver and the "Raw Input" setting within osu!. More specifically the "Gamon" tablet driver was to be the source of this, but SIMILAR behavior may be produced through using an XP-PEN tablet with no driver. You're not actually able to play like when using the Gamon driver, but it seems worth noting.
   
 This behavior was possibly thought to be evidence towards software interference with osu! but this may actually not be the case.
 
@@ -12,13 +12,15 @@ When typically not possible, sometimes a player may move their cursor out of bou
 
 - [IN GAME | Demonstration of recreating this behavior ARTIFICALLY through use of "maple.software"](https://streamable.com/itnxj6)
 
-It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination. More testing is required.  
+It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination. More testing is required, but the entire off screen and teleportation visually related portion of this is likely the osu! process writing it's cursor to invalid coords, realizing it's mistake, then setting the cursor back in play.  
 
-It is also not known if being in or out of play has any affect on this behavior.  
+It is also not known if being in or out of play has any affect on this behavior, but it seems more than likely it does not.  
   
 ***So far, this appears to NOT happen with:***
-- XP-PEN PenTablet
 - [OpenTabletDriver](https://youtu.be/AZfd7HCz8T0)
+
+***Appears to partially happens with? Possibly unrelated?:***
+- [XP-PEN NoDriver](https://youtu.be/PUQRm2EHhRE)
 
 *Please keep in mind this is the product of only two days of research, and that research into this possible bug has been completely independant. All work done in this repository is only for public information, and none of it's authors or contributors are leaning in any direction regarding any topic when it comes to its use other than the plain fact that this game behavior appears to POSSIBLY be unanticipated. This information, its authors, and its contributors are not claiming or intending to claim any proven fact. Only speculation.*
 

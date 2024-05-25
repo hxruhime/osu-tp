@@ -24,13 +24,13 @@ Gamon Tablet Driver in Relative Mode
 ##### Mouse | Confine Cursor
 ###### This setting will allow you to chose when osu! will confine the WINDOWS cursor to the osu! game window.
 
-## Anticipated Behavior  
+## Behavior Anticipated to Occur  
 - Windows does not allow the Windows cursor to move out of the monitor bounds to the left (at all).  
 - osu! does not allow the osu! cursor to move out of the monitor bounds to the left (more than half way) depending on certain environmental configurations.  
 
 *Note: The amount moved past the barrier differs because of where the actual center of the sprite is.*  
 
-## Unanticipated Behavior  
+## Unanticipated Behavior Occuring  
 - user is able to move the osu! cursor out of monitor bounds more than halfway to the left.
 - osu! then teleports the player's cursor back into regular play bounds.
 

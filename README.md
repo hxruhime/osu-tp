@@ -1,2 +1,37 @@
-# osu-tp
-C++ | Demonstrates a bug where osu! occasionally renders the cursor outside of the regular monitor bounds
+# osu-tp  
+A bug where osu! occasionally renders the cursor outside of the regular monitor bounds  
+
+## Observation Environment 
+```
+No Monitor to the Left
+Above 1.0 Sens
+Raw Input
+Gamon Tablet Driver in Relative Mode
+```
+
+## Anticipated Behavior  
+- windows does not allow the cursor to move out of the monitor bounds to the left (at all).  
+- osu! does not allow the cursor to move out of the monitor bounds to the left (more than half way) depending on certain environmental configurations.  
+
+*Note: The amount moved past the barrier differs because of where the actual center of the sprite is.*  
+
+## Unanticipated Behavior  
+- user is able to move the osu! cursor out of monitor bounds more than halfway to the left.
+- osu! then teleports the player's cursor back into regular play bounds.
+
+## Proposed Explaination
+- There is both an osu! and windows curosr.
+- Due to using a sensitivity above one, the player is forced to use Raw Input.
+- Raw Input makes osu! read the tablet driver to determine the osu! cursor position, allowing for it to be set past the bounds typically containing the windows cursor.
+- Due to some bug at this process, Gamon will report the osu! cursor to be outside of play, causing osu! to attempt to render it off screen before catching this mistake,
+
+## Settings Explaination  
+
+### Mouse | Sensitivity  
+A sensitivity above `1.0` will force "Raw Input" to be enabled.  
+
+### Mouse | [Raw Input](https://osu.ppy.sh/community/forums/topics/187785?n=1)
+"Raw input allows osu! to read mouse/tablet values directly from the hardware, without any post-processing. As a result, it can bypas windows bugs and acceleration algorithms. It can also allow for tablet sensitivity adjustment without setting a custom tablet area mapping at driver-level."
+
+### Mouse | Confine Cursor
+This setting will allow you to chose when osu! will confine the WINDOWS cursor to the osu! game window.

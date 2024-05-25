@@ -3,6 +3,9 @@ A bug where osu! occasionally renders / allows the cursor outside of the regular
   
 This behavior was possibly thought to be evidence towards software interference with osu!
 
+- [Clip of this thought to be happening to "worst hr player"](https://streamable.com/pssvvk)
+- [Clip of "Shiratori-P" recreating this bug](https://www.youtube.com/watch?v=OTuvFCODsbY)
+
 ## Observation Environment 
 ```
 No Monitor to the Left

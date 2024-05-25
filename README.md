@@ -2,7 +2,7 @@
 
 A behavior where osu! occasionally renders/allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the tablet driver and the "Raw Input" setting within osu!.
 
-More specifically, the "Gaomon" tablet driver was speculated to be the source of this, but similar behavior may be produced using an XP-PEN tablet with no driver. You're not actually able to play using no driver unlike when using the Gaomon driver, but it seems worth noting.
+More specifically, the "Gaomon" tablet driver was speculated to be the source of this, but similar behavior may be produced using an XP-PEN tablet with no driver. You're not actually able to play using no driver (cursor gets stuck) unlike when using the Gaomon driver (in this test environment), but it seems worth noting.
 
 - [IN AND OUT OF GAME | Gaomon S620 | Gaomon Driver | "worst hr player", possibly experiencing this behavior](https://streamable.com/pssvvk)
 - [IN GAME | "Shiratori-P", possibly recreating this behavior](https://www.youtube.com/watch?v=OTuvFCODsbY)

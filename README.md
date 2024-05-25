@@ -2,12 +2,9 @@
 A behavior where osu! occasionally renders / allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the tablet driver and the "Raw Input" setting within osu!.  
   
 More specifically the "Gamon" tablet driver was speculated to be the source of this, but SIMILAR behavior may be produced through using an XP-PEN tablet with no driver. You're not actually able to play using no driver unlike when using the Gamon driver, but it seems worth noting.
-  
-This behavior was possibly thought to be evidence towards software interference with osu! but this may actually not be the case.
 
 - [IN AND OUT OF GAME | Clip of this thought to be happening to "worst hr player"](https://streamable.com/pssvvk)
 - [IN GAME | Clip of "Shiratori-P" thought to be recreating this behavior](https://www.youtube.com/watch?v=OTuvFCODsbY)
-- [Other instances of possible innaccuracy of osu! cursor due to Gamon tablet drivers?](https://www.reddit.com/r/osugame/comments/i5v5p7/how_can_i_fix_teleporting_cursors/)
 
 ***TLDR***  
 When typically not possible, sometimes a player may move their cursor out of bounds due to what is thought to be an inaccurate interaction between the tablet driver and osu! while the "Raw Input" setting is enabled. This can cause players that experience this bug to look like they may have external software interacting with their osu! game process.  

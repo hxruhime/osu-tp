@@ -50,9 +50,23 @@ if (GetAsyncKeyState(VK_DELETE) & 1)
 
   // statically set the Windows cursor coordinates to -10000
   SetCursorPos(-10000, p.y);
-}```
+}
+```
 
-**Moving the osu! Cursor (Memory Manipulation)** 
+**Moving the osu! Cursor (External Memory Manipulation)** 
+```c++
+// if user presses END, move osu! cursor to X -10000, Y
+if (GetAsyncKeyState(VK_END) & 1)
+{
+  POINT p;
+
+  // get the cursor position
+  GetCursorPos(&p);
+
+  // set the cursor position to -10000
+  Player::SetCursorPosition({ -10000, p.y });
+}
+```
 
 ### Moving the Windows cursor using the Windows API while Raw Input is enabled:
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl,fl) function, notice there is no response from the osu! cursor.

@@ -5,6 +5,14 @@ This behavior was possibly thought to be evidence towards software interference 
 
 - [Clip of this thought to be happening to "worst hr player"](https://streamable.com/pssvvk)
 - [Clip of "Shiratori-P" recreating this bug](https://www.youtube.com/watch?v=OTuvFCODsbY)
+- [Other instances of possible innaccuracy of osu! cursor due to Gamon tablet drivers?](https://www.reddit.com/r/osugame/comments/i5v5p7/how_can_i_fix_teleporting_cursors/)
+
+***TLDR***  
+When typically not possible, sometimes a player may move their cursor out of bounds due to what is thought to be an inaccurate interaction between the Gamon tablet driver and osu! while the "Raw Input" setting is enabled. This can cause players that experience this bug to look like they may have external software interacting with their osu! game process.  
+
+- [Demonstration of recreating this behavior through use of external software](https://streamable.com/itnxj6)
+
+It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination.
 
 ## Observation Environment 
 ```
@@ -85,6 +93,6 @@ When attempting to use the Windows API to move the osu! cursor using the SetCurs
 When attempting to use the Windows API to move the osu! cursor using the SetCursorPos(fl,fl) function, notice the osu! cursor teleports to halfway off the screen horizontally.  
 ![Supporting GIF](https://cdn.discordapp.com/attachments/731235337073852436/1243736255481774161/windows_cursor_no_raw_input.gif?ex=66528f26&is=66513da6&hm=da0df6a4826d13fcaf87689c794e28c4d2468a313038fb07cf009d67aea4131c&)
 
-### Moving the osu! cursor using the Windows API while Raw Input is enabled:
-
-### Moving the osu! cursor using the Windows API while Raw Input is disabled:
+### Moving the osu! cursor using maple.software while Raw Input is disabled:
+When attempting to use Windows API to move the osu! cursor using maple.software, an internal cheating software which interacts with osu! through memory, a different story is told. Here we can see a way to illegitamtely recreate this behavior where the osu! cursor can leave the screen bounds.  
+![Supporting Video](https://streamable.com/pssvvk?src=player-page-share)

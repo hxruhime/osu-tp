@@ -75,6 +75,11 @@ int main()
   // get pointers
 
   // read addresses 
+
+  // log keybinds now that program has gathered required data
+  std::cout << "Press INSERT to exit the program" << std::endl;
+  std::cout << "Press DELETE to move the WINDOWS cursor to X -10000" << std::endl;
+  std::cout << "Press END to move the OSU cursor to X -10000" << std::endl;
   
   // infinite loop
   while (true)

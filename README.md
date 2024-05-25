@@ -1,7 +1,7 @@
 # osu-tp  
 A behavior where osu! occasionally renders / allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the tablet driver and the "Raw Input" setting within osu!.  
   
-More specifically the "Gamon" tablet driver was speculated to be the source of this, but SIMILAR behavior may be produced through using an XP-PEN tablet with no driver. You're not actually able to play using no driver unlike when using the Gamon driver, but it seems worth noting.
+More specifically the "Gaomon" tablet driver was speculated to be the source of this, but SIMILAR behavior may be produced through using an XP-PEN tablet with no driver. You're not actually able to play using no driver unlike when using the Gamon driver, but it seems worth noting.
 
 - [IN AND OUT OF GAME | "worst hr player", possibly experiencing this behavior](https://streamable.com/pssvvk)
 - [IN GAME | "Shiratori-P", possibly recreating this behavior](https://www.youtube.com/watch?v=OTuvFCODsbY)
@@ -11,13 +11,13 @@ When typically not possible, sometimes a player may move their cursor out of bou
 
 - [IN GAME | Demonstration of recreating this behavior ARTIFICALLY through use of "maple.software"](https://streamable.com/itnxj6)
 
-It is still not 100% that this behavior is due to osu!, Gamon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination. More testing is required, but the entire off screen and teleportation visually related portion of this is likely the osu! process writing it's cursor to invalid coords, realizing it's mistake, then setting the cursor back in play.  
+It is still not 100% that this behavior is due to osu!, Gaomon, or other unkown / unconsidered factors, but so far this seems to be the most logical explaination. More testing is required, but the entire off screen and teleportation visually related portion of this is likely the osu! process writing it's cursor to invalid coords, realizing it's mistake, then setting the cursor back in play.  
 
 It is also not known if being in or out of game (playstate as in menu vs mid map) has any affect on this behavior, but it seems more than likely it does not.  
 
 | Tablet            | Driver           | Behavior Occurs |
 | :---------------- | :--------------: | :-----: |
-| Gamon ?           | Gamon Driver     | [✔️](https://www.youtube.com/watch?v=OTuvFCODsbY) |
+| Gaomon ?          | Gaomon Driver    | [✔️](https://www.youtube.com/watch?v=OTuvFCODsbY) |
 | XP-PEN Star G630s | PenTablet        | [❌](https://youtu.be/n3PcbDo6324)                |
 | XP-PEN Star G630s | None             | [⚠️](https://youtu.be/PUQRm2EHhRE)                |
 | Wacom CTL - 480   | OpenTabletDriver | [❌](https://youtu.be/AZfd7HCz8T0)                |
@@ -29,7 +29,7 @@ It is also not known if being in or out of game (playstate as in menu vs mid map
 No Monitor to the Side Being Penetrated
 Above 1.0 Sensitivity
 Raw Input
-Gamon Tablet Driver
+Gaomon Tablet Driver
 Relative / Mouse Mode
 ```
 # osu! Settings Explaination  
@@ -60,7 +60,7 @@ Relative / Mouse Mode
 - There is both an osu! and Windows curosr.
 - Due to using a sensitivity above one, the player is forced to use Raw Input.
 - Raw Input makes osu! read the tablet driver to determine the osu! cursor position, allowing for it to be set past the bounds typically containing the windows cursor.
-- Due to some bug at this process, Gamon (or other tablet drivers?) will report the osu! cursor to be outside of play, causing osu! to attempt to render it off screen before catching this mistake,
+- Due to some bug at this process, Gaomon (or other tablet drivers?) will report the osu! cursor to be outside of play, causing osu! to attempt to render it off screen before catching this mistake,
 
 # Additional Tests by Software
 `In all tests done by software, there is no monitor present to the left of the monitor displaying osu !and confine cursor is always set to "Never".`

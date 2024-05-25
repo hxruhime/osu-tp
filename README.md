@@ -45,7 +45,7 @@ Gamon Tablet Driver in Relative Mode
 ### When replicating the bug with OpenTabletDriver:
 
 ## Additional Tests by Software
-`In all tests, there is no monitor present to the left of the monitor displaying osu!`
+`In all tests done by software, there is no monitor present to the left of the monitor displaying osu !and confine cursor is always set to "Never".`
 
 **Moving the Windows Cursor**
 ```c++

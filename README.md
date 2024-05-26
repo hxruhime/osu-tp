@@ -1,6 +1,6 @@
 # osu-tp
 
-A behavior where osu! occasionally renders/allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the tablet driver and the "Raw Input" setting within osu!.
+A behavior where osu! occasionally renders/allows the cursor outside of the regular monitor bounds due to what is believed to be a bugged interaction between the tablet hardware and the "Raw Input" setting within osu!.
 
 - ["worst hr player", possibly experiencing this behavior](https://streamable.com/pssvvk)
 - ["Shiratori-P", possibly recreating this behavior](https://www.youtube.com/watch?v=OTuvFCODsbY)
